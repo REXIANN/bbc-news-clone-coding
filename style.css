@@ -24,6 +24,7 @@ img {
   position: sticky;
   top: 0;
   height: 100vh;
+  overflow-x: hidden;
 }
 .graphic-item {
   /* 이미지가 화면에 꽉 차게 하고 정렬 */
@@ -37,6 +38,7 @@ img {
   left: 0;
   opacity: 0;
   transition: 0.5s;
+  will-change: opacity;
 }
 .visible {
   opacity: 1;
@@ -54,4 +56,23 @@ img {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.8);
   box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+}
+.bird {
+  position: absolute;
+  left: 0;
+  bottom: 70%;
+  width: 100px;
+  transform: translateX(-100%);
+  transition: 1.5s 0.5s linear;
+}
+[data-index="5"] .bird {
+  left: 30%;
+  bottom: 30%;
+}
+.global-footer {
+  padding: 2rem 0;
+  text-align: center;
+}
+.strikethrough {
+  text-decoration: line-through;
 }
