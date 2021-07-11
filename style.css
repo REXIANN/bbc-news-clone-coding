@@ -1,0 +1,19 @@
+html {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+	margin: 0;
+}
+div, section, header, footer, p, h1, h2 {
+	/* 패딩과 보더가 width, height에 포함되도록 함 */
+	box-sizing: border-box;
+}
+a {
+	color: royalblue;
+}
+img {
+	/* 반응형이 잘 되라고 max-width를 줌 */
+	max-width: 100%;
+	height: auto;
+}
+
