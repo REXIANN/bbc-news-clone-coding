@@ -38,3 +38,14 @@ img {
   top: 0;
   left: 0;
 }
+.scroll-text {
+  /* position의 기본값은 static. 기본값이 아니면 z-index 값을 가지고 있음. 값을 안주면 아래에 있는 녀석이 위에위치함 */
+  position: relative;
+}
+.step {
+  padding: 5px 10px;
+  margin-bottom: 60vh;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+}
