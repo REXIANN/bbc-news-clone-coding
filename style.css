@@ -5,7 +5,6 @@ body {
 	margin: 0;
 }
 div, section, header, footer, p, h1, h2 {
-	/* 패딩과 보더가 width, height에 포함되도록 함 */
 	box-sizing: border-box;
 }
 a {
@@ -22,7 +21,6 @@ img {
   padding: 0 15px;
 }
 .scroll-graphic {
-  /* caniuse 에서 검색해보자. IE에서는 sticky 못 씀 */
   position: sticky;
   top: 0;
   height: 100vh;
@@ -37,12 +35,16 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.visible {
+  opacity: 1;
 }
 .scene-img {
   max-height: 100vh;
 }
 .scroll-text {
-  /* position의 기본값은 static. 기본값이 아니면 z-index 값을 가지고 있음. 값을 안주면 아래에 있는 녀석이 위에위치함 */
   position: relative;
   padding-bottom: 1px;
 }
